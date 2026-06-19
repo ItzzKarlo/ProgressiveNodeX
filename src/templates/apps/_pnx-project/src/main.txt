@@ -1,0 +1,7 @@
+Project: $$NAME$$
+Description: $$DESCRIPTION$$
+Language: $$LANGUAGE$$
+Framework: $$FRAMEWORK$$
+Template: $$TEMPLATE_NAME$$
+
+Start building your project here.

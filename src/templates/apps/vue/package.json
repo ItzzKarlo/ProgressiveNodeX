@@ -1,0 +1,17 @@
+{
+    "name": "$$NAME$$",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite --host $$HOST$$ --port $$PORT$$",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@vitejs/plugin-vue": "latest",
+        "vite": "latest",
+        "vue": "latest"
+    },
+    "devDependencies": {}
+}
