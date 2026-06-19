@@ -6083,6 +6083,7 @@ imported by:
  &#8226;   <a href="#json.decoder">json.decoder</a>
  &#8226;   <a href="#json.encoder">json.encoder</a>
  &#8226;   <a href="#json.scanner">json.scanner</a>
+ &#8226;   <a href="#src._Modules.project">src._Modules.project</a>
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
@@ -6579,10 +6580,12 @@ imported by:
  &#8226;   <a href="#importlib.resources.abc">importlib.resources.abc</a>
  &#8226;   <a href="#importlib.resources.readers">importlib.resources.readers</a>
  &#8226;   <a href="#pathlib._os">pathlib._os</a>
+ &#8226;   <a href="#src._Modules.project">src._Modules.project</a>
  &#8226;   <a href="#src.commands.cmd_create">src.commands.cmd_create</a>
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.tools.path_helper">src.tools.path_helper</a>
  &#8226;   <a href="#zipfile._path">zipfile._path</a>
@@ -7150,6 +7153,7 @@ imports:
 imported by:
     <a href="#src._Modules.command_registry">src._Modules.command_registry</a>
  &#8226;   <a href="#src._Modules.meta_data">src._Modules.meta_data</a>
+ &#8226;   <a href="#src._Modules.project">src._Modules.project</a>
 
   </div>
 
@@ -7169,6 +7173,7 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
  &#8226;   <a href="#src.commands.version_command">src.commands.version_command</a>
@@ -7194,9 +7199,28 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
  &#8226;   <a href="#src.commands.version_command">src.commands.version_command</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="src._Modules.project"></a>
+  <a target="code" href="///M:/_Development/_Projects/OPI/src/_Modules/project.py" type="text/plain"><tt>src._Modules.project</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#json">json</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#src._Modules">src._Modules</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
 
   </div>
 
@@ -7234,6 +7258,7 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
  &#8226;   <a href="#src.commands.version_command">src.commands.version_command</a>
 
@@ -7272,6 +7297,7 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
  &#8226;   <a href="#src.commands.version_command">src.commands.version_command</a>
@@ -7371,6 +7397,28 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="src.commands.cmd_run"></a>
+  <a target="code" href="///M:/_Development/_Projects/OPI/src/commands/cmd_run.py" type="text/plain"><tt>src.commands.cmd_run</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#src._Modules.command_registry">src._Modules.command_registry</a>
+ &#8226;   <a href="#src._Modules.meta_data">src._Modules.meta_data</a>
+ &#8226;   <a href="#src._Modules.project">src._Modules.project</a>
+ &#8226;   <a href="#src.assets.headers">src.assets.headers</a>
+ &#8226;   <a href="#src.commands">src.commands</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#src.commands_loader">src.commands_loader</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="src.commands.cmd_search"></a>
   <a target="code" href="///M:/_Development/_Projects/OPI/src/commands/cmd_search.py" type="text/plain"><tt>src.commands.cmd_search</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -7440,6 +7488,7 @@ imports:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
  &#8226;   <a href="#src.commands.version_command">src.commands.version_command</a>
@@ -7733,6 +7782,7 @@ imports:
 imported by:
     <a href="#os">os</a>
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
 
   </div>
 
