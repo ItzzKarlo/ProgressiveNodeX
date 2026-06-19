@@ -1,0 +1,5 @@
+# Notes
+
+Project: $$NAME$$
+
+$$DESCRIPTION$$

@@ -1,0 +1,2 @@
+__version__ = '2026.06.2400' # YEAR.MONTH.BUILDNUM
+__type__ = 'STABLE' # EITHER "STABLE" OR "DEV"

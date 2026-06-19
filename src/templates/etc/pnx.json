@@ -1,0 +1,43 @@
+{
+    "project": {
+        "name": "$$NAME$$",
+        "description": "$$DESCRIPTION$$",
+        "version": "0.0.1",
+
+        "mode": {
+            "debug": "$$DEBUG$$",
+            "development": "$$DEVMODE$$",
+            "release": "$$RELEASEMODE$$"
+        },
+
+        "template_info": {
+            "template_used": "$$TEMPLATE_USED$$",
+            "template_name": "$$TEMPLATE_NAME$$",
+            "template_version": "$$TEMPLATE_VERSION$$"
+        }
+    },
+
+    "runtime": {
+        "language": "$$LANGUAGE$$",
+        "framework": "$$FRAMEWORK$$",
+        "entrypoint": "$$ENTRYPOINT$$"
+    },
+
+    "build": {
+        "targets": "$$TARGETS$$",
+        "output": "$$OUTPUT$$"
+    },
+
+    "serve": {
+        "host": "$$HOST$$",
+        "port": "$$PORT$$",
+        "reload": "$$RELOAD$$"
+    },
+
+    "scripts": {
+        "start": "$$START_COMMAND$$",
+        "test": "$$TEST_COMMAND$$",
+        "version": "ProgressiveNodeX --version",
+        "help": "ProgressiveNodeX --help"
+    }
+}
