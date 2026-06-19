@@ -10,7 +10,7 @@ header_big = f"""
 
                          ─────── ProgressiveNodeX5 ───────
 
-                             Your Python Code LEVEL UP   
+                                Your Code LEVEL UP   
                                     v{__version__}"""
 
 header_small = f"""
