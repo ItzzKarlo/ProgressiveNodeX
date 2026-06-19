@@ -13,6 +13,7 @@ class InitCommand(Metadata):
     name = "init"
     aliases = ["--init", "--create-project"]
     description = CommandVersion.DEV
+    category = 'Projects'
     command_help = CommandHelp(
         syntax="ProgressiveNodeX [init | --init | --create-template-project]",
         usage="Creates a new project using a selected template.",

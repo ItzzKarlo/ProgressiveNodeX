@@ -15,10 +15,13 @@ class CommandHelp:
 
 class Metadata:
     name: str = ""
+    aliases: list[str] = []
+
+    category: str = "General"
     description: str = ""
+    
     version: CommandVersion = CommandVersion.DEV
     command_help: CommandHelp | None = None
-    aliases: list[str] = []
 
     def __init__(self, args: list[str] | None = None):
         self.args = args or [] 

@@ -11,6 +11,7 @@ class CreateCommand(Metadata):
     name = "create"
     aliases = ["--create-template"]
     description = "Creates a new project template."
+    category = 'Templates'
     version = CommandVersion.DEV
     command_help = CommandHelp(
         syntax='ProgressiveNodeX create',

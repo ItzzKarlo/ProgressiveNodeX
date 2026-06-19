@@ -9,6 +9,7 @@ class VersionCommand(Metadata):
     name = '--version'
     aliases = ['-v', 'version']
     description = 'Shows the app\'s version'
+    category = 'Information'
     command_help = CommandHelp(
         syntax="ProgressiveNodeX --version",
         usage="Displays the current application version",

@@ -10,6 +10,7 @@ class SearchCommand(Metadata):
     aliases = ["--search"]
     description = "Searches available project templates."
     version = CommandVersion.RELEASE
+    category = 'Templates'
     command_help = CommandHelp(
         syntax="ProgressiveNodeX search [template]",
         usage="Lists all templates or searches for a specific template.",

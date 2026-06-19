@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build Artifacts
+build/
+dist/
+*.spec
+
+# PyInstaller
+*.manifest
+*.exe.manifest
+
+# Packaging
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type Checkers
+.mypy_cache/
+.pyre/
+.pytype/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Runtime / Temporary
+tmp/
+temp/
+.cache/
+
+# Environment Files
+.env
+.env.local
+
+# NodeJS
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Frontend Build Outputs
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+
+# .NET
+bin/
+obj/
+
+# Rust
+target/
+
+# Go
+vendor/
+
+# Backup / Temporary Files
+*.bak
+*.old
+*.tmp

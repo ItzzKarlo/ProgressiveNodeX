@@ -1,4 +1,5 @@
 from src._Modules.command_registry import CommandRegistry
+from src.commands.help_command import HelpCommand
 import src.commands_loader
 
 class Commands:
@@ -7,7 +8,11 @@ class Commands:
 
     def handle(self):
         if not self.args:
-            print("No command given. Use ProgressiveNodeX --help")
+            CommandRegistry.find("--help")(self.args).run()
+            return
+
+        if "--help" in self.args or "-h" in self.args:
+            HelpCommand(self.args).run()
             return
 
         for arg in self.args:
