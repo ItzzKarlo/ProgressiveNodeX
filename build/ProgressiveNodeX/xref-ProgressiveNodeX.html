@@ -6580,11 +6580,13 @@ imported by:
  &#8226;   <a href="#importlib.resources.abc">importlib.resources.abc</a>
  &#8226;   <a href="#importlib.resources.readers">importlib.resources.readers</a>
  &#8226;   <a href="#pathlib._os">pathlib._os</a>
+ &#8226;   <a href="#src._Modules.dependency_manager">src._Modules.dependency_manager</a>
  &#8226;   <a href="#src._Modules.project">src._Modules.project</a>
  &#8226;   <a href="#src.commands.cmd_create">src.commands.cmd_create</a>
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
  &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.tools.path_helper">src.tools.path_helper</a>
@@ -7069,6 +7071,7 @@ imports:
 imported by:
     <a href="#argparse">argparse</a>
  &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#src._Modules.dependency_manager">src._Modules.dependency_manager</a>
  &#8226;   <a href="#src.commands.cmd_create">src.commands.cmd_create</a>
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
@@ -7152,6 +7155,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#src._Modules.command_registry">src._Modules.command_registry</a>
+ &#8226;   <a href="#src._Modules.dependency_manager">src._Modules.dependency_manager</a>
  &#8226;   <a href="#src._Modules.meta_data">src._Modules.meta_data</a>
  &#8226;   <a href="#src._Modules.project">src._Modules.project</a>
 
@@ -7173,11 +7177,31 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
  &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
  &#8226;   <a href="#src.commands.version_command">src.commands.version_command</a>
  &#8226;   <a href="#src.handle_commands">src.handle_commands</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="src._Modules.dependency_manager"></a>
+  <a target="code" href="///M:/_Development/_Projects/OPI/src/_Modules/dependency_manager.py" type="text/plain"><tt>src._Modules.dependency_manager</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#src._Modules">src._Modules</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
 
   </div>
 
@@ -7199,6 +7223,7 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
  &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
@@ -7220,7 +7245,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
+    <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
+ &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
 
   </div>
 
@@ -7258,6 +7284,7 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
  &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
  &#8226;   <a href="#src.commands.version_command">src.commands.version_command</a>
@@ -7297,6 +7324,7 @@ imported by:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
  &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
@@ -7386,6 +7414,28 @@ imports:
  &#8226;   <a href="#src.assets.headers">src.assets.headers</a>
  &#8226;   <a href="#src.commands">src.commands</a>
  &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#src.commands_loader">src.commands_loader</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="src.commands.cmd_install"></a>
+  <a target="code" href="///M:/_Development/_Projects/OPI/src/commands/cmd_install.py" type="text/plain"><tt>src.commands.cmd_install</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#src._Modules.command_registry">src._Modules.command_registry</a>
+ &#8226;   <a href="#src._Modules.dependency_manager">src._Modules.dependency_manager</a>
+ &#8226;   <a href="#src._Modules.meta_data">src._Modules.meta_data</a>
+ &#8226;   <a href="#src._Modules.project">src._Modules.project</a>
+ &#8226;   <a href="#src.assets.headers">src.assets.headers</a>
+ &#8226;   <a href="#src.commands">src.commands</a>
 
   </div>
   <div class="import">
@@ -7488,6 +7538,7 @@ imports:
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_info">src.commands.cmd_info</a>
  &#8226;   <a href="#src.commands.cmd_init">src.commands.cmd_init</a>
+ &#8226;   <a href="#src.commands.cmd_install">src.commands.cmd_install</a>
  &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
  &#8226;   <a href="#src.commands.cmd_search">src.commands.cmd_search</a>
  &#8226;   <a href="#src.commands.help_command">src.commands.help_command</a>
@@ -7781,6 +7832,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#os">os</a>
+ &#8226;   <a href="#src._Modules.dependency_manager">src._Modules.dependency_manager</a>
  &#8226;   <a href="#src.commands.cmd_doctor">src.commands.cmd_doctor</a>
  &#8226;   <a href="#src.commands.cmd_run">src.commands.cmd_run</a>
 
