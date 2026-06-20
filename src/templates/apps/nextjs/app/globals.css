@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #020617;
+  color: #f8fafc;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.hero {
+  max-width: 760px;
+}
+
+.hero span {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 10vw, 7rem);
+  margin: 12px 0;
+}

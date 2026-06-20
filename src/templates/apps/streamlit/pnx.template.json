@@ -1,0 +1,19 @@
+{
+    "name":  "streamlit",
+    "display_name":  "Streamlit",
+    "description":  "A quick Python data app starter using Streamlit.",
+    "language":  "Python",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "python",
+                 "streamlit",
+                 "data",
+                 "dashboard"
+             ],
+    "scripts":  {
+                    "install":  "pip install -r requirements.txt",
+                    "dev":  "streamlit run app.py",
+                    "start":  "streamlit run app.py"
+                }
+}

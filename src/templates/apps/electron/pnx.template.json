@@ -1,0 +1,18 @@
+{
+    "name":  "electron",
+    "display_name":  "Electron",
+    "description":  "A desktop application starter using Electron.",
+    "language":  "JavaScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "electron",
+                 "desktop",
+                 "javascript"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm start",
+                    "start":  "npm start"
+                }
+}

@@ -1,0 +1,19 @@
+{
+    "name":  "java-springboot",
+    "display_name":  "Java Spring Boot",
+    "description":  "A Java Spring Boot REST API starter.",
+    "language":  "Java",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "java",
+                 "springboot",
+                 "api",
+                 "backend"
+             ],
+    "scripts":  {
+                    "dev":  "mvn spring-boot:run",
+                    "build":  "mvn package",
+                    "start":  "mvn spring-boot:run"
+                }
+}

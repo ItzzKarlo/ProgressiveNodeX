@@ -1,0 +1,11 @@
+{
+  "name": "pnx/php-api",
+  "description": "A ProgressiveNodeX generated PHP API",
+  "type": "project",
+  "require": {
+    "php": ">=8.2"
+  },
+  "scripts": {
+    "start": "php -S localhost:3000 -t public"
+  }
+}

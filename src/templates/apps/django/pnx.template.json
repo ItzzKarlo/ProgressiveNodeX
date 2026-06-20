@@ -1,0 +1,20 @@
+{
+    "name":  "django",
+    "display_name":  "Django",
+    "description":  "A minimal Django web application starter.",
+    "language":  "Python",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "python",
+                 "django",
+                 "web",
+                 "backend"
+             ],
+    "scripts":  {
+                    "install":  "pip install -r requirements.txt",
+                    "dev":  "python manage.py runserver",
+                    "migrate":  "python manage.py migrate",
+                    "start":  "python manage.py runserver"
+                }
+}

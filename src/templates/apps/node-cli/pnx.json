@@ -1,0 +1,16 @@
+{
+    "name":  "node-cli",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "node-cli",
+    "scripts":  {
+                    "install":  "npm install",
+                    "run":  "npm start",
+                    "start":  "npm start"
+                },
+    "commands":  {
+                     "install":  "npm install",
+                     "run":  "npm start",
+                     "start":  "npm start"
+                 }
+}

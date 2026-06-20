@@ -1,0 +1,16 @@
+{
+    "name":  "go-api",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "go-api",
+    "scripts":  {
+                    "dev":  "go run .",
+                    "build":  "go build -o app.exe .",
+                    "start":  "go run ."
+                },
+    "commands":  {
+                     "dev":  "go run .",
+                     "build":  "go build -o app.exe .",
+                     "start":  "go run ."
+                 }
+}

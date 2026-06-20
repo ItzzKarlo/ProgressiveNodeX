@@ -1,0 +1,18 @@
+{
+    "name":  "angular",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "angular",
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm start",
+                    "build":  "npm run build",
+                    "test":  "npm test"
+                },
+    "commands":  {
+                     "install":  "npm install",
+                     "dev":  "npm start",
+                     "build":  "npm run build",
+                     "test":  "npm test"
+                 }
+}

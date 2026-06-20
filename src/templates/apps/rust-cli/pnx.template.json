@@ -1,0 +1,18 @@
+{
+    "name":  "rust-cli",
+    "display_name":  "Rust CLI",
+    "description":  "A simple Rust command-line application starter.",
+    "language":  "Rust",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "rust",
+                 "cli",
+                 "systems"
+             ],
+    "scripts":  {
+                    "dev":  "cargo run",
+                    "build":  "cargo build --release",
+                    "start":  "cargo run"
+                }
+}

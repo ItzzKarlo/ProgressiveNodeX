@@ -1,0 +1,18 @@
+{
+    "name":  "dotnet-webapi",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "dotnet-webapi",
+    "scripts":  {
+                    "restore":  "dotnet restore",
+                    "dev":  "dotnet run",
+                    "build":  "dotnet build",
+                    "start":  "dotnet run"
+                },
+    "commands":  {
+                     "restore":  "dotnet restore",
+                     "dev":  "dotnet run",
+                     "build":  "dotnet build",
+                     "start":  "dotnet run"
+                 }
+}

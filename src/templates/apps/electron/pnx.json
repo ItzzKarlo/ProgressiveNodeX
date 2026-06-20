@@ -1,0 +1,16 @@
+{
+    "name":  "electron",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "electron",
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm start",
+                    "start":  "npm start"
+                },
+    "commands":  {
+                     "install":  "npm install",
+                     "dev":  "npm start",
+                     "start":  "npm start"
+                 }
+}

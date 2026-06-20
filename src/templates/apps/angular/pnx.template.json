@@ -1,0 +1,20 @@
+{
+    "name":  "angular",
+    "display_name":  "Angular",
+    "description":  "A minimal Angular single-page application starter.",
+    "language":  "TypeScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "angular",
+                 "typescript",
+                 "frontend",
+                 "spa"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm start",
+                    "build":  "npm run build",
+                    "test":  "npm test"
+                }
+}

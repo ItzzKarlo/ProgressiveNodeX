@@ -1,0 +1,18 @@
+{
+    "name":  "flutter",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "flutter",
+    "scripts":  {
+                    "get":  "flutter pub get",
+                    "dev":  "flutter run",
+                    "build":  "flutter build",
+                    "start":  "flutter run"
+                },
+    "commands":  {
+                     "get":  "flutter pub get",
+                     "dev":  "flutter run",
+                     "build":  "flutter build",
+                     "start":  "flutter run"
+                 }
+}

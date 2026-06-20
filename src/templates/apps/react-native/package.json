@@ -1,0 +1,16 @@
+{
+  "name": "ReactNativeApp",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "@react-native-community/cli": "latest",
+    "react": "latest",
+    "react-native": "latest"
+  },
+  "devDependencies": {}
+}

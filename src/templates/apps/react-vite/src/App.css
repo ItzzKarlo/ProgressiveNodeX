@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-width: 720px;
+  padding: 48px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.eyebrow {
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+}

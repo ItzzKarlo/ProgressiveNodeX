@@ -1,0 +1,21 @@
+{
+    "name":  "nestjs-api",
+    "display_name":  "NestJS API",
+    "description":  "A structured Node.js API starter using NestJS and TypeScript.",
+    "language":  "TypeScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "node",
+                 "nestjs",
+                 "api",
+                 "backend",
+                 "typescript"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm run start:dev",
+                    "build":  "npm run build",
+                    "start":  "npm start"
+                }
+}

@@ -1,0 +1,16 @@
+{
+    "name":  "tauri",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "tauri",
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm run tauri dev",
+                    "build":  "npm run tauri build"
+                },
+    "commands":  {
+                     "install":  "npm install",
+                     "dev":  "npm run tauri dev",
+                     "build":  "npm run tauri build"
+                 }
+}

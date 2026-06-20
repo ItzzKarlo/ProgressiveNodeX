@@ -1,0 +1,19 @@
+{
+    "name":  "express-api",
+    "display_name":  "Express API",
+    "description":  "A lightweight Node.js REST API starter using Express.",
+    "language":  "JavaScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "node",
+                 "express",
+                 "api",
+                 "backend"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm run dev",
+                    "start":  "npm start"
+                }
+}

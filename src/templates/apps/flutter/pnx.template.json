@@ -1,0 +1,21 @@
+{
+    "name":  "flutter",
+    "display_name":  "Flutter",
+    "description":  "A cross-platform Flutter application starter.",
+    "language":  "Dart",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "flutter",
+                 "dart",
+                 "mobile",
+                 "desktop",
+                 "cross-platform"
+             ],
+    "scripts":  {
+                    "get":  "flutter pub get",
+                    "dev":  "flutter run",
+                    "build":  "flutter build",
+                    "start":  "flutter run"
+                }
+}

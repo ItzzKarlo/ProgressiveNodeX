@@ -1,0 +1,16 @@
+{
+    "name":  "express-api",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "express-api",
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm run dev",
+                    "start":  "npm start"
+                },
+    "commands":  {
+                     "install":  "npm install",
+                     "dev":  "npm run dev",
+                     "start":  "npm start"
+                 }
+}

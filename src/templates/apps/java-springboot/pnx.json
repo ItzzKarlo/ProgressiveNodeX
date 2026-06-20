@@ -1,0 +1,16 @@
+{
+    "name":  "java-springboot",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "java-springboot",
+    "scripts":  {
+                    "dev":  "mvn spring-boot:run",
+                    "build":  "mvn package",
+                    "start":  "mvn spring-boot:run"
+                },
+    "commands":  {
+                     "dev":  "mvn spring-boot:run",
+                     "build":  "mvn package",
+                     "start":  "mvn spring-boot:run"
+                 }
+}

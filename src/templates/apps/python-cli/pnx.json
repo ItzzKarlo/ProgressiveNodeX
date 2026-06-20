@@ -1,0 +1,16 @@
+{
+    "name":  "python-cli",
+    "version":  "0.1.0",
+    "type":  "app",
+    "template":  "python-cli",
+    "scripts":  {
+                    "install":  "pip install -e .",
+                    "run":  "python -m app",
+                    "start":  "python -m app"
+                },
+    "commands":  {
+                     "install":  "pip install -e .",
+                     "run":  "python -m app",
+                     "start":  "python -m app"
+                 }
+}

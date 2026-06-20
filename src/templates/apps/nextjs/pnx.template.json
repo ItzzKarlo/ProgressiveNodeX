@@ -1,0 +1,20 @@
+{
+    "name":  "nextjs",
+    "display_name":  "Next.js",
+    "description":  "A Next.js app router starter for full-stack React applications.",
+    "language":  "JavaScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "nextjs",
+                 "react",
+                 "frontend",
+                 "fullstack"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm run dev",
+                    "build":  "npm run build",
+                    "start":  "npm start"
+                }
+}

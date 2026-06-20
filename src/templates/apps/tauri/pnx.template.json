@@ -1,0 +1,19 @@
+{
+    "name":  "tauri",
+    "display_name":  "Tauri",
+    "description":  "A lightweight desktop application starter using Tauri.",
+    "language":  "Rust/JavaScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "tauri",
+                 "desktop",
+                 "rust",
+                 "javascript"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm run tauri dev",
+                    "build":  "npm run tauri build"
+                }
+}

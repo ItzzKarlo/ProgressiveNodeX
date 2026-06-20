@@ -1,0 +1,20 @@
+{
+    "name":  "sveltekit",
+    "display_name":  "SvelteKit",
+    "description":  "A SvelteKit application starter with Vite.",
+    "language":  "JavaScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "svelte",
+                 "sveltekit",
+                 "vite",
+                 "frontend"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "dev":  "npm run dev",
+                    "build":  "npm run build",
+                    "preview":  "npm run preview"
+                }
+}

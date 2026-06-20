@@ -1,0 +1,20 @@
+{
+    "name":  "react-native",
+    "display_name":  "React Native",
+    "description":  "A React Native mobile application starter.",
+    "language":  "JavaScript",
+    "version":  "1.0.0",
+    "type":  "app",
+    "tags":  [
+                 "react-native",
+                 "mobile",
+                 "react",
+                 "javascript"
+             ],
+    "scripts":  {
+                    "install":  "npm install",
+                    "android":  "npm run android",
+                    "ios":  "npm run ios",
+                    "start":  "npm start"
+                }
+}
