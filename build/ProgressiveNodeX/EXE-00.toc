@@ -3,7 +3,7 @@
  False,
  False,
  ['M:\\_Development\\_Projects\\OPI\\assets\\logo.ico'],
- versioninfo.VSVersionInfo(ffi=versioninfo.FixedFileInfo(filevers=(2026, 6, 2400, 1), prodvers=(2026, 6, 2400, 1), mask=0x3f, flags=0x0, OS=0x40004, fileType=1, subtype=0x0, date=(0, 0)), kids=[versioninfo.StringFileInfo([versioninfo.StringTable('040904B0', [versioninfo.StringStruct('CompanyName', 'KarloDevelopingStudios'), versioninfo.StringStruct('FileDescription', 'ProgressiveNodeX5 Application File'), versioninfo.StringStruct('FileVersion', '2026.06.2400'), versioninfo.StringStruct('InternalName', 'ProgressiveNodeX5'), versioninfo.StringStruct('OriginalFilename', 'ProgressiveNodeX.exe'), versioninfo.StringStruct('ProductName', 'ProgressiveNodeX V5'), versioninfo.StringStruct('ProductVersion', '2026.06.2400')])]), versioninfo.VarFileInfo([versioninfo.VarStruct('Translation', [1033, 1200])])]),
+ versioninfo.VSVersionInfo(ffi=versioninfo.FixedFileInfo(filevers=(2026, 6, 193, 1), prodvers=(2026, 6, 193, 1), mask=0x3f, flags=0x0, OS=0x40004, fileType=1, subtype=0x0, date=(0, 0)), kids=[versioninfo.StringFileInfo([versioninfo.StringTable('040904B0', [versioninfo.StringStruct('CompanyName', 'KarloDevelopingStudios'), versioninfo.StringStruct('FileDescription', 'ProgressiveNodeX5 Application File'), versioninfo.StringStruct('FileVersion', '2026.06.0193'), versioninfo.StringStruct('InternalName', 'ProgressiveNodeX5'), versioninfo.StringStruct('OriginalFilename', 'ProgressiveNodeX.exe'), versioninfo.StringStruct('ProductName', 'ProgressiveNodeX V5'), versioninfo.StringStruct('ProductVersion', '2026.06.0193')])]), versioninfo.VarFileInfo([versioninfo.VarStruct('Translation', [1033, 1200])])]),
  False,
  False,
  b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns='
@@ -282,7 +282,7 @@
  [],
  False,
  False,
- 1781942285,
+ 1781943614,
  [('run.exe',
    'M:\\_Development\\_Projects\\OPI\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
