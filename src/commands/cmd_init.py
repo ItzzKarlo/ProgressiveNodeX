@@ -1,18 +1,21 @@
 import json
 import shutil
 import sys
-from pathlib import WindowsPath, Path
+import tempfile
+import zipfile
 from pathlib import Path
 
 from src._Modules.meta_data import Metadata, CommandHelp, CommandVersion
 from src._Modules.command_registry import CommandRegistry
+from src._Modules.marketplace_client import MarketplaceApiError, download_template, get_template
 from src.assets.headers import header_small
 
 @CommandRegistry.register
 class InitCommand(Metadata):
     name = "init"
     aliases = ["--init", "--create-project"]
-    description = CommandVersion.DEV
+    description = 'Initializes a new project using an local or marketplace template.'
+    version = CommandVersion.DEV
     category = 'Projects'
     command_help = CommandHelp(
         syntax="ProgressiveNodeX [init | --init | --create-template-project]",
@@ -22,6 +25,10 @@ class InitCommand(Metadata):
 
     def run(self):
         print(header_small)
+
+        if "--marketplace" in self.args or "marketplace" in self.args:
+            self.run_marketplace_init()
+            return
 
         templates = self.get_all_templates()
 
@@ -252,6 +259,147 @@ class InitCommand(Metadata):
         
         return "3000"
     
+
+    def run_marketplace_init(self):
+        template_ref = self.get_marketplace_template_ref()
+
+        if not template_ref:
+            print("Marketplace template name or URL is required.")
+            print("Example: ProgressiveNodeX init --marketplace hello-pnx")
+            return
+
+        try:
+            template_info = get_template(template_ref)
+        except MarketplaceApiError as error:
+            print(f"Marketplace lookup failed: {error}")
+            return
+
+        default_project_name = template_info.get("slug") or "pnx-project"
+
+        project_name = input(f"Project name [{default_project_name}]: ").strip()
+        if not project_name:
+            project_name = default_project_name
+
+        target_root = input(f"Project path [Default: {str(Path.cwd())}]: ").strip()
+        if not target_root:
+            target_root = str(Path.cwd())
+
+        target_root = Path(target_root)
+        project_dir = target_root / project_name
+
+        print(f'Project "{project_name}" is going to be created in "{project_dir}".')
+
+        if project_dir.exists():
+            print(f'Project "{project_dir}" already exists.')
+            return
+
+        try:
+            with tempfile.TemporaryDirectory() as temp_dir:
+                archive_path = Path(temp_dir) / f"{default_project_name}.zip"
+                download_template(template_ref, archive_path)
+
+                manifest = self.read_template_manifest_from_zip(archive_path)
+
+                project_dir.mkdir(parents=True, exist_ok=False)
+                self.safe_extract_zip(archive_path, project_dir)
+
+        except MarketplaceApiError as error:
+            print(f"Marketplace download failed: {error}")
+            return
+        except Exception as error:
+            if project_dir.exists():
+                shutil.rmtree(project_dir, ignore_errors=True)
+
+            print(f"Failed to initialize marketplace template: {error}")
+            return
+
+        values = {
+            "NAME": project_name,
+            "DESCRIPTION": input("Description: ").strip(),
+            "LANGUAGE": str(manifest.get("language") or template_info.get("language") or "unknown").lower(),
+            "FRAMEWORK": str(manifest.get("framework") or template_info.get("slug") or "marketplace"),
+            "ENTRYPOINT": self.detect_entrypoint(project_dir, manifest),
+            "TEMPLATE_USED": "true",
+            "TEMPLATE_NAME": str(template_info.get("slug") or template_ref),
+            "TEMPLATE_VERSION": str(template_info.get("version") or manifest.get("version") or "1.0.0"),
+            "DEBUG": "true",
+            "DEVMODE": "true",
+            "RELEASEMODE": "false",
+            "TARGETS": "windows",
+            "TARGETS_2": "linux",
+            "TARGETS_3": "macos",
+            "OUTPUT": "dist",
+            "HOST": "127.0.0.1",
+            "PORT": self.default_port(str(manifest.get("framework") or "marketplace")),
+            "RELOAD": "true"
+        }
+
+        self.replace_placeholders(project_dir, values)
+        self.create_pnx_json(project_dir, values)
+
+        template_manifest_path = project_dir / "pnx.template.json"
+        if template_manifest_path.exists():
+            template_manifest_path.unlink()
+
+        print()
+        print(f'Created project: {project_dir}')
+        print(f'Used marketplace template: {template_info.get("slug")}')
+        print()
+        print("Navigate to your project path and start coding!")
+
+    def get_marketplace_template_ref(self) -> str | None:
+        for index, arg in enumerate(self.args):
+            if arg in ["--marketplace", "marketplace"]:
+                if index + 1 < len(self.args):
+                    return self.args[index + 1]
+
+        return None
+
+    def read_template_manifest_from_zip(self, archive_path: Path) -> dict:
+        with zipfile.ZipFile(archive_path, "r") as archive:
+            if "pnx.template.json" not in archive.namelist():
+                return {}
+
+            raw = archive.read("pnx.template.json").decode("utf-8")
+            return json.loads(raw)
+
+    def safe_extract_zip(self, archive_path: Path, target_dir: Path):
+        target_dir = target_dir.resolve()
+
+        with zipfile.ZipFile(archive_path, "r") as archive:
+            for member in archive.infolist():
+                destination = (target_dir / member.filename).resolve()
+
+                try:
+                    destination.relative_to(target_dir)
+                except ValueError:
+                    raise ValueError(f"Unsafe file path in template archive: {member.filename}")
+
+            archive.extractall(target_dir)
+
+    def detect_entrypoint(self, project_dir: Path, manifest: dict) -> str:
+        manifest_entry = manifest.get("entrypoint") or manifest.get("entry")
+
+        if isinstance(manifest_entry, str) and manifest_entry.strip():
+            return manifest_entry.strip()
+
+        candidates = [
+            "main.py",
+            "app.py",
+            "server.py",
+            "index.js",
+            "main.js",
+            "package.json",
+            "Program.cs",
+        ]
+
+        for candidate in candidates:
+            if (project_dir / candidate).exists():
+                return candidate
+
+        return "main"
+
+
     def get_builtin_templates_dir(self) -> Path:
         return self.resource_path("src/templates/apps")
 

@@ -7,3 +7,5 @@ from src.commands.cmd_info import InfoCommand
 from src.commands.cmd_doctor import DoctorCommand
 from src.commands.cmd_run import RunCommand
 from src.commands.cmd_install import InstallCommand
+from src.commands.cmd_auth import AuthCommand
+from src.commands.cmd_marketplace import MarketplaceCommand
