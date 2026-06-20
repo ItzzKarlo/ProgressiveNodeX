@@ -200,3 +200,23 @@ def upload_template(zip_path: Path, template_name: str, token: str) -> dict:
         raise MarketplaceApiError(_read_error_message(error))
     except URLError as error:
         raise MarketplaceApiError(f"Could not reach marketplace API: {error.reason}")
+    
+def delete_marketplace_template(template_ref: str, token: str) -> dict:
+    slug = extract_template_slug(template_ref)
+
+    return request_json(
+        "DELETE",
+        f"/templates/{quote(slug)}",
+        token=token,
+    )
+
+
+def rename_marketplace_template(template_ref: str, new_template_name: str, token: str) -> dict:
+    slug = extract_template_slug(template_ref)
+
+    return request_json(
+        "PATCH",
+        f"/templates/{quote(slug)}",
+        data={"template_name": new_template_name},
+        token=token,
+    )

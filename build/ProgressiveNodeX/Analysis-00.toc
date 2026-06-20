@@ -703,6 +703,10 @@
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\tracemalloc.py',
    'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_py_abc.py',
+   'PYMODULE'),
   ('codeop',
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\codeop.py',
@@ -711,10 +715,6 @@
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\stringprep.py',
    'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_py_abc.py',
-   'PYMODULE'),
   ('src.handle_commands',
    'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\handle_commands.py',
    'PYMODULE'),
@@ -722,8 +722,8 @@
   ('src.commands_loader',
    'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\commands_loader.py',
    'PYMODULE'),
-  ('src.commands.cmd_marketplace',
-   'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\commands\\cmd_marketplace.py',
+  ('src.commands.cmd_admin',
+   'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\commands\\cmd_admin.py',
    'PYMODULE'),
   ('src.commands', '-', 'PYMODULE'),
   ('src.assets.headers',
@@ -733,16 +733,10 @@
   ('src.assets.version_info_file',
    'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\assets\\version_info_file.py',
    'PYMODULE'),
-  ('src._Modules.marketplace_auth',
-   'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\_Modules\\marketplace_auth.py',
-   'PYMODULE'),
-  ('src._Modules', '-', 'PYMODULE'),
-  ('src._Modules.template_packager',
-   'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\_Modules\\template_packager.py',
-   'PYMODULE'),
   ('src._Modules.meta_data',
    'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\_Modules\\meta_data.py',
    'PYMODULE'),
+  ('src._Modules', '-', 'PYMODULE'),
   ('src._Modules.marketplace_client',
    'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\_Modules\\marketplace_client.py',
    'PYMODULE'),
@@ -773,6 +767,15 @@
   ('_aix_support',
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('src._Modules.marketplace_auth',
+   'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\_Modules\\marketplace_auth.py',
+   'PYMODULE'),
+  ('src.commands.cmd_marketplace',
+   'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\commands\\cmd_marketplace.py',
+   'PYMODULE'),
+  ('src._Modules.template_packager',
+   'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\_Modules\\template_packager.py',
    'PYMODULE'),
   ('src.commands.cmd_auth',
    'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\src\\commands\\cmd_auth.py',
@@ -1066,85 +1069,101 @@
   ('base_library.zip',
    'M:\\_Development\\_Projects\\PNX\\ProgressiveNodeX-CLI\\build\\ProgressiveNodeX\\base_library.zip',
    'DATA')],
- [('codecs',
+ [('ntpath',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\codecs.py',
-   'PYMODULE'),
-  ('_collections_abc',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_collections_abc.py',
-   'PYMODULE'),
-  ('sre_compile',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_compile.py',
-   'PYMODULE'),
-  ('os',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\os.py',
-   'PYMODULE'),
-  ('sre_parse',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_parse.py',
-   'PYMODULE'),
-  ('heapq',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\heapq.py',
-   'PYMODULE'),
-  ('operator',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\operator.py',
-   'PYMODULE'),
-  ('enum',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\enum.py',
-   'PYMODULE'),
-  ('warnings',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\warnings.py',
-   'PYMODULE'),
-  ('copyreg',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\copyreg.py',
-   'PYMODULE'),
-  ('keyword',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\keyword.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\ntpath.py',
    'PYMODULE'),
   ('sre_constants',
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_constants.py',
    'PYMODULE'),
-  ('traceback',
+  ('os',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\traceback.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\os.py',
    'PYMODULE'),
-  ('weakref',
+  ('warnings',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\weakref.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\warnings.py',
    'PYMODULE'),
-  ('types',
+  ('heapq',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\types.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\heapq.py',
    'PYMODULE'),
-  ('reprlib',
+  ('re._parser',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\reprlib.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_parser.py',
    'PYMODULE'),
-  ('io',
+  ('re._constants',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\io.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_constants.py',
+   'PYMODULE'),
+  ('re._compiler',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_compiler.py',
+   'PYMODULE'),
+  ('re._casefix',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_casefix.py',
+   'PYMODULE'),
+  ('re',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\__init__.py',
    'PYMODULE'),
   ('genericpath',
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\genericpath.py',
    'PYMODULE'),
-  ('stat',
+  ('enum',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\stat.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\enum.py',
+   'PYMODULE'),
+  ('operator',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\operator.py',
+   'PYMODULE'),
+  ('abc',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\abc.py',
    'PYMODULE'),
   ('functools',
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\functools.py',
+   'PYMODULE'),
+  ('_weakrefset',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_weakrefset.py',
+   'PYMODULE'),
+  ('_collections_abc',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_collections_abc.py',
+   'PYMODULE'),
+  ('locale',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\locale.py',
+   'PYMODULE'),
+  ('copyreg',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\copyreg.py',
+   'PYMODULE'),
+  ('sre_compile',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_compile.py',
+   'PYMODULE'),
+  ('weakref',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\weakref.py',
+   'PYMODULE'),
+  ('traceback',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\traceback.py',
+   'PYMODULE'),
+  ('types',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\types.py',
+   'PYMODULE'),
+  ('stat',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\stat.py',
    'PYMODULE'),
   ('encodings.zlib_codec',
    'C:\\Users\\Karlo '
@@ -1638,51 +1657,35 @@
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\encodings\\__init__.py',
    'PYMODULE'),
-  ('collections',
+  ('keyword',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\collections\\__init__.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\keyword.py',
    'PYMODULE'),
-  ('locale',
+  ('io',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\locale.py',
-   'PYMODULE'),
-  ('_weakrefset',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_weakrefset.py',
-   'PYMODULE'),
-  ('abc',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\abc.py',
-   'PYMODULE'),
-  ('ntpath',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\ntpath.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\io.py',
    'PYMODULE'),
   ('linecache',
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\linecache.py',
    'PYMODULE'),
-  ('re._parser',
+  ('sre_parse',
    'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_parser.py',
-   'PYMODULE'),
-  ('re._constants',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_constants.py',
-   'PYMODULE'),
-  ('re._compiler',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_compiler.py',
-   'PYMODULE'),
-  ('re._casefix',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_casefix.py',
-   'PYMODULE'),
-  ('re',
-   'C:\\Users\\Karlo '
-   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\__init__.py',
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_parse.py',
    'PYMODULE'),
   ('posixpath',
    'C:\\Users\\Karlo '
    'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\posixpath.py',
+   'PYMODULE'),
+  ('collections',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\collections\\__init__.py',
+   'PYMODULE'),
+  ('reprlib',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\reprlib.py',
+   'PYMODULE'),
+  ('codecs',
+   'C:\\Users\\Karlo '
+   'Cavlovic\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\codecs.py',
    'PYMODULE')])

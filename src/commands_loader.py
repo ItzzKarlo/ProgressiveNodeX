@@ -9,3 +9,4 @@ from src.commands.cmd_run import RunCommand
 from src.commands.cmd_install import InstallCommand
 from src.commands.cmd_auth import AuthCommand
 from src.commands.cmd_marketplace import MarketplaceCommand
+from src.commands.cmd_admin import AdminCommand

@@ -41,7 +41,7 @@ class MarketplaceCommand(Metadata):
             self.add()
             return
         
-        self.print_useage()
+        self.print_usage()
 
 
     def marketplace_index(self) -> int | None:
