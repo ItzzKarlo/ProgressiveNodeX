@@ -44,7 +44,8 @@ class InstallCommand(Metadata):
         print(f'Language     {project.language}')
         print(f'Framework    {project.framework}')
         print(f'Directory    {project.root_dir}')
-        print(f'Python Int   {manager.find_python_executable()}')
+        if project.language in ['python', 'py']:
+            print(f'Python Int   {manager.find_python_executable()}')
         print()
 
         success = manager.install()
